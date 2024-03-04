@@ -1,0 +1,317 @@
+Program.Sub.ScreenSU.Start
+gui.FrmCustInfo..create
+gui.FrmCustInfo..caption("Customer Information")
+gui.FrmCustInfo..size(8835,5430)
+gui.FrmCustInfo..minx(0)
+gui.FrmCustInfo..miny(0)
+gui.FrmCustInfo..position(0,0)
+gui.FrmCustInfo..event(unload,ProgUnload)
+gui.FrmCustInfo..alwaysontop(False)
+gui.FrmCustInfo..fontname("Arial")
+gui.FrmCustInfo..fontsize(9)
+gui.FrmCustInfo..forecolor(0)
+gui.FrmCustInfo..fontstyle(False,False,False,False,)
+gui.FrmCustInfo..BackColor(-2147483633)
+gui.FrmCustInfo..controlbox(True)
+gui.FrmCustInfo..maxbutton(True)
+gui.FrmCustInfo..minbutton(True)
+gui.FrmCustInfo..mousepointer(0)
+gui.FrmCustInfo..moveable(True)
+gui.FrmCustInfo..sizeable(False)
+gui.FrmCustInfo..ShowInTaskBar(True)
+gui.FrmCustInfo..titlebar(True)
+gui.FrmCustInfo.lblCrHold.create(label,"Credit Hold:",True,1080,255,1,200,3600,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblCrHold.defaultvalue("")
+gui.FrmCustInfo.lblCrHold.controlgroup(0)
+gui.FrmCustInfo.lblCrLimit.create(label,"Credit Limit:",True,1125,255,1,200,4200,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblCrLimit.defaultvalue("")
+gui.FrmCustInfo.lblCrLimit.controlgroup(0)
+gui.FrmCustInfo.lblLastSale.create(label,"Date of Last Sale:",True,1620,255,1,200,3000,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblLastSale.defaultvalue("")
+gui.FrmCustInfo.lblLastSale.controlgroup(0)
+gui.FrmCustInfo.lblOpOrBal.create(label,"Open Order Balance:",True,1950,255,1,100,1200,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblOpOrBal.defaultvalue("")
+gui.FrmCustInfo.lblOpOrBal.controlgroup(0)
+gui.FrmCustInfo.lblTerms.create(label,"Terms:",True,645,255,1,200,2400,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblTerms.defaultvalue("")
+gui.FrmCustInfo.lblTerms.controlgroup(0)
+gui.FrmCustInfo.lblDiscount.create(label,"Order Discount:",True,1395,255,1,200,1800,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblDiscount.defaultvalue("")
+gui.FrmCustInfo.lblDiscount.controlgroup(0)
+gui.FrmCustInfo.lblCustName.create(label,"Customer Name:",True,1560,255,1,200,600,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblCustName.defaultvalue("")
+gui.FrmCustInfo.lblCustName.controlgroup(0)
+gui.FrmCustInfo.lblSales.create(label,"Salesperson:",True,1215,255,1,4600,600,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblSales.defaultvalue("")
+gui.FrmCustInfo.lblSales.controlgroup(0)
+gui.FrmCustInfo.txtCustName.create(textbox,"",True,2745,360,0,1735,560,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtCustName.defaultvalue("")
+gui.FrmCustInfo.txtCustName.controlgroup(0)
+gui.FrmCustInfo.txtDiscount.create(textbox,"",True,2040,360,0,1800,1800,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtDiscount.numericonly(2)
+gui.FrmCustInfo.txtDiscount.defaultvalue("")
+gui.FrmCustInfo.txtDiscount.controlgroup(0)
+gui.FrmCustInfo.txtTerms.create(textbox,"",True,2040,360,0,1800,2400,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtTerms.defaultvalue("")
+gui.FrmCustInfo.txtTerms.controlgroup(0)
+gui.FrmCustInfo.txtSales.create(textbox,"",True,2280,360,0,5800,560,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtSales.defaultvalue("")
+gui.FrmCustInfo.txtSales.controlgroup(0)
+gui.FrmCustInfo.txtOpOrBal.create(textbox,"",True,2475,360,0,1990,1200,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtOpOrBal.numericonly(1)
+gui.FrmCustInfo.txtOpOrBal.defaultvalue("")
+gui.FrmCustInfo.txtOpOrBal.controlgroup(0)
+gui.FrmCustInfo.txtLastSale.create(textbox,"",True,2040,360,0,1800,3000,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtLastSale.defaultvalue("")
+gui.FrmCustInfo.txtLastSale.controlgroup(0)
+gui.FrmCustInfo.txtCrLimit.create(textbox,"",True,2040,360,0,1800,4200,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtCrLimit.numericonly(0)
+gui.FrmCustInfo.txtCrLimit.defaultvalue("")
+gui.FrmCustInfo.txtCrLimit.controlgroup(0)
+gui.FrmCustInfo.txtCrHold.create(textbox,"",True,2040,360,0,1800,3600,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtCrHold.defaultvalue("")
+gui.FrmCustInfo.txtCrHold.controlgroup(0)
+gui.FrmCustInfo.lblOpItBal.create(label,"AR Balance:",False,1170,255,1,4400,4500,False,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblOpItBal.defaultvalue("")
+gui.FrmCustInfo.lblOpItBal.controlgroup(0)
+gui.FrmCustInfo.txtOpItBal.create(textbox,"",False,2130,360,0,5700,4400,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtOpItBal.numericonly(1)
+gui.FrmCustInfo.txtOpItBal.defaultvalue("")
+gui.FrmCustInfo.txtOpItBal.controlgroup(0)
+gui.FrmCustInfo.lblArAging.create(label,"AR Aging",True,1095,255,1,6600,1400,True,2,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblArAging.defaultvalue("")
+gui.FrmCustInfo.lblArAging.controlgroup(0)
+gui.FrmCustInfo.lblCurrent.create(label,"Current:",True,1125,255,1,5100,1900,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lblCurrent.defaultvalue("")
+gui.FrmCustInfo.lblCurrent.controlgroup(0)
+gui.FrmCustInfo.lbl3060.create(label,"30 - 60:",True,1125,255,1,5100,2300,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lbl3060.defaultvalue("")
+gui.FrmCustInfo.lbl3060.controlgroup(0)
+gui.FrmCustInfo.lbl6090.create(label,"60 - 90:",True,1125,255,1,5100,2700,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lbl6090.defaultvalue("")
+gui.FrmCustInfo.lbl6090.controlgroup(0)
+gui.FrmCustInfo.lbl90plus.create(label,"90 +:",True,1125,255,1,5100,3100,True,0,Arial,10,-2147483633,0)
+gui.FrmCustInfo.lbl90plus.defaultvalue("")
+gui.FrmCustInfo.lbl90plus.controlgroup(0)
+gui.FrmCustInfo.txtCurrent.create(textbox,"",True,2040,360,0,6200,1800,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txtCurrent.numericonly(0)
+gui.FrmCustInfo.txtCurrent.defaultvalue("")
+gui.FrmCustInfo.txtCurrent.controlgroup(0)
+gui.FrmCustInfo.txt3060.create(textbox,"",True,2040,360,0,6200,2200,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txt3060.numericonly(0)
+gui.FrmCustInfo.txt3060.defaultvalue("")
+gui.FrmCustInfo.txt3060.controlgroup(0)
+gui.FrmCustInfo.txt6090.create(textbox,"",True,2040,360,0,6200,2600,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txt6090.numericonly(0)
+gui.FrmCustInfo.txt6090.defaultvalue("")
+gui.FrmCustInfo.txt6090.controlgroup(0)
+gui.FrmCustInfo.txt90plus.create(textbox,"",True,2040,360,0,6200,3000,False,2,Arial,9,15790320,1)
+gui.FrmCustInfo.txt90plus.numericonly(0)
+gui.FrmCustInfo.txt90plus.defaultvalue("")
+gui.FrmCustInfo.txt90plus.controlgroup(0)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Clevland Punch - CRM Customer Information
+'Created by AV
+'Hook: 42900 (Populate) and 42922 (Script 5 Button in CRM)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,42900)
+	V.Passed.CRM-cmdGAB-4.Set("Customer Info")
+F.Intrinsic.Control.Else
+
+'Open DB Connection
+F.ODBC.Connection!conA.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+'Call sub Customer Info
+F.Intrinsic.Control.CallSub(Subcustinfo)
+'Call sub Aging
+F.Intrinsic.Control.CallSub(Subaging)
+
+
+'Show Form
+Gui.FrmCustInfo..Show
+
+F.Intrinsic.Control.EndIf
+
+
+
+Program.Sub.Main.End
+
+Program.Sub.ProgUnload.Start
+
+F.ODBC.Connection!conA.Close
+
+F.Intrinsic.Control.End
+
+Program.Sub.ProgUnload.End
+
+Program.Sub.subCustInfo.Start
+'Declare Variables
+V.Local.rstCust.Declare(String)
+V.Local.rstSales.Declare(String)
+V.Local.rstCustSales.Declare(String)
+V.Local.rstTerms.Declare(String)
+V.Local.rstDisc.Declare(String)
+V.Local.rstCrLimit.Declare(String)
+
+
+'Set Company in variable for script
+V.Global.Cust.Declare(String)
+V.Global.Cust.Set(V.Passed.DATA-CRM-CompID)
+'V.Global.Cust.Set("001000")
+
+
+'Open Record set for Customer Master Infomation
+F.Intrinsic.String.Concat("SELECT CUSTOMER, NAME_CUSTOMER, SALESPERSON, FLAG_CREDIT_HOLD, CREDIT FROM V_CUSTOMER_MASTER WHERE CUSTOMER = '",V.Global.Cust,"';",V.Local.rstCust)
+F.ODBC.Connection!conA.OpenLocalRecordsetRO("rstCust",V.Local.rstCust)
+Gui.FrmCustInfo.txtCustName.Text(V.ODBC.conA!rstCust.FieldVal!NAME_CUSTOMER)
+
+F.Intrinsic.Control.If(V.ODBC.conA!rstCust.FieldVal!FLAG_CREDIT_HOLD,=,"Y")
+	Gui.FrmCustInfo.txtCrHold.Text("YES")
+F.Intrinsic.Control.Else
+	Gui.FrmCustInfo.txtCrHold.Text("NO")
+F.Intrinsic.Control.EndIf
+
+'Set Salesperson to a variable
+V.Local.sSales.Declare(String)
+V.Local.sSales.Set(V.ODBC.conA!rstCust.FieldVal!SALESPERSON)
+
+'Open Record set for Sales Person Information
+F.Intrinsic.String.Concat("SELECT ID, NAME FROM V_SALESPERSONS WHERE ID = '",V.Local.sSales,"';",V.Local.rstSales)
+F.ODBC.Connection!conA.OpenLocalRecordsetRO("rstSales",V.Local.rstSales)
+F.Intrinsic.control.If(V.ODBC.conA!rstSales.EOF,=,True)
+	Gui.FrmCustInfo.txtSales.Text("N/A")
+F.Intrinsic.Control.Else
+	Gui.FrmCustInfo.txtSales.Text(V.ODBC.conA!rstSales.FieldVal!NAME)
+F.Intrinsic.Control.EndIf
+
+'Set variable for Credit Limit
+V.Local.sCrLimit.Declare(String)
+V.Local.sCrLimit.Set(V.ODBC.conA!rstCust.FieldVal!CREDIT)
+
+'Open Record Set for Credit Limit
+F.Intrinsic.String.Concat("SELECT * FROM V_AR_CREDIT_LIMIT WHERE CREDIT_CODE = '",V.local.sCrLimit,"';",V.Local.rstCrLimit)
+F.ODBC.Connection!conA.OpenLocalRecordsetRO("rstCrLimit",V.Local.rstCrLimit)
+F.Intrinsic.control.If(V.ODBC.conA!rstCrLimit.EOF,=,True)
+	Gui.FrmCustInfo.txtCrLimit.Text("N/A")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Format(V.ODBC.conA!rstCrLimit.FieldVal!CREDIT_AMOUNT,"###,###,###.00",V.Local.sCrLimit)
+	Gui.FrmCustInfo.txtCrLimit.Text(V.Local.sCrLimit)
+F.Intrinsic.Control.EndIf
+
+'Close Record Sets
+F.ODBC.conA!rstCrLimit.Close
+F.ODBC.conA!rstSales.Close
+F.ODBC.conA!rstCust.Close
+
+'Open Record Set for Customer Sales Information
+F.Intrinsic.String.Concat("SELECT DATE_LAST_SALE, AMT_OPEN_ITEM_BAL, AMT_OPEN_ORDERS, PAYMENT_TERMS  FROM V_CUSTOMER_SALES WHERE CUSTOMER = '",V.Global.Cust,"';",V.Local.rstCustSales)
+F.ODBC.Connection!conA.OpenLocalRecordsetRO("rstCustSales",V.Local.rstCustSales)
+Gui.FrmCustInfo.txtLastSale.Text(V.ODBC.conA!rstCustSales.FieldVal!DATE_LAST_SALE)
+'Drop the Decimals
+V.Local.sBal.Declare(String)
+F.Intrinsic.String.Format(V.ODBC.conA!rstCustSales.FieldVal!AMT_OPEN_ITEM_BAL,"###,###,###.00",V.Local.sBal)
+Gui.FrmCustInfo.txtOpItBal.Text(V.Local.sBal)
+V.Local.sOpen.Declare(String)
+F.Intrinsic.String.Format(V.ODBC.conA!rstCustSales.FieldVal!AMT_OPEN_ORDERS,"###,###,###.00",V.Local.sOpen)
+Gui.FrmCustInfo.txtOpOrBal.Text(V.Local.sOpen)
+
+'Set Variable for Payment Terms
+V.Local.sTerms.Declare(String)
+V.Local.sTerms.Set(V.ODBC.conA!rstCustSales.FieldVal!PAYMENT_TERMS)
+
+'Open Record set to pull Terms
+F.Intrinsic.String.Concat("SELECT TERMS_CODE, TERMS_MESSAGE FROM V_AR_TERMS WHERE TERMS_CODE ='",V.Local.sTerms,"';",V.Local.rstTerms)
+F.ODBC.Connection!conA.OpenLocalRecordsetRO("rstTerms",V.Local.rstTerms)
+F.Intrinsic.control.If(V.ODBC.conA!rstTerms.EOF,=,True)
+	Gui.FrmCustInfo.txtTerms.Text("N/A")
+F.Intrinsic.Control.Else
+	Gui.FrmCustInfo.txtTerms.Text(V.ODBC.conA!rstTerms.FieldVal!TERMS_MESSAGE)
+F.Intrinsic.Control.EndIf
+
+'Close Record Sets
+F.ODBC.conA!rstTerms.Close
+F.ODBC.conA!rstCustSales.Close
+
+'Open Record set Cusotmer Ship To
+F.Intrinsic.String.Concat("SELECT CUSTOMER, DISCOUNT FROM V_CUSTOMER_SHIPTO WHERE CUSTOMER = '",V.Global.Cust,"';",V.Local.rstDisc)
+F.ODBC.Connection!conA.OpenLocalRecordsetRO("rstDisc",V.Local.rstDisc)
+F.Intrinsic.Control.If(V.ODBC.conA!rstDisc.FieldVal!DISCOUNT,=,0)
+	Gui.FrmCustInfo.txtDiscount.Text("No Order Discount.")
+F.Intrinsic.Control.Else
+	V.Local.fDisc.Declare(Float)
+	V.Local.sDisc.Declare(String)
+	F.Intrinsic.Math.Mult(V.ODBC.conA!rstDisc.FieldVal!DISCOUNT,100,V.Local.fDisc)
+	F.Intrinsic.String.ConvertToString(V.Local.fDisc,V.Local.fDisc)
+	F.Intrinsic.String.Concat(V.Local.fDisc,"%",V.Local.sDisc)
+	Gui.FrmCustInfo.txtDiscount.Text(V.Local.sDisc)
+F.Intrinsic.Control.EndIf
+
+'Close Record Set
+F.ODBC.conA!rstDisc.Close
+
+
+Program.Sub.subCustInfo.End
+
+Program.Sub.subAging.Start
+V.Local.sSQL.Declare(String)
+V.Local.dDate1.Declare(Date)
+V.Local.dDate2.Declare(Date)
+V.Local.iDay.Declare(Long)
+V.Local.i.Declare(Long)
+V.Local.sAmt.Declare(String)
+
+F.Intrinsic.Control.For(V.Local.i,0,3,1)
+'DATE1
+F.Intrinsic.Math.Mult(-30,V.Local.i,V.Local.iDay)
+F.Intrinsic.Date.DateAdd("D",V.Local.iDay,V.Ambient.Date,V.Local.dDate1)
+'DATE2
+F.Intrinsic.Math.Add(-30,V.Local.iDay,V.Local.iDay)
+F.Intrinsic.Math.Add(V.Local.iDay,1,V.Local.iDay)
+F.Intrinsic.Date.DateAdd("D",V.Local.iDay,V.Ambient.Date,V.Local.dDate2)
+		F.Intrinsic.Control.If(V.Local.i,=,0)
+	V.Local.dDate1.Set(V.Ambient.Date)
+			F.Intrinsic.String.Concat("SELECT SUM(AMT_INVOICE) AS AMT FROM V_AR_OPEN_ITEMS WHERE CUSTOMER = '",V.Global.Cust,"' AND BATCH_CODE IN ('10','11','12') AND DATE_INVOICE BETWEEN '",V.Local.dDate2.PervasiveDate,"' AND '",V.Local.dDate1.PervasiveDate,"';",V.Local.sSQL)
+			F.ODBC.Connection!conA.OpenRecordsetRO("rstAging",V.Local.sSQL)
+			F.Intrinsic.String.Format(V.ODBC.conA!rstAging.FieldVal!AMT,"###,###,###.00",V.Local.sAmt)
+			Gui.FrmCustInfo.txtCurrent.Text(V.Local.sAmt)
+			F.ODBC.conA!rstAging.Close
+		F.Intrinsic.Control.ElseIf(V.Local.i,=,1)
+	F.Intrinsic.Date.DateAdd("D",-30,V.Ambient.Date,V.Local.dDate1)
+			F.Intrinsic.String.Concat("SELECT SUM(AMT_INVOICE) AS AMT FROM V_AR_OPEN_ITEMS WHERE CUSTOMER = '",V.Global.Cust,"' AND BATCH_CODE IN ('10','11','12') AND DATE_INVOICE BETWEEN '",V.Local.dDate2.PervasiveDate,"' AND '",V.Local.dDate1.PervasiveDate,"';",V.Local.sSQL)
+			F.ODBC.Connection!conA.OpenRecordsetRO("rstAging",V.Local.sSQL)
+			F.Intrinsic.String.Format(V.ODBC.conA!rstAging.FieldVal!AMT,"###,###,###.00",V.Local.sAmt)
+			Gui.FrmCustInfo.txt3060.Text(V.Local.sAmt)
+			F.ODBC.conA!rstAging.Close
+		F.Intrinsic.Control.ElseIf(V.Local.i,=,2)
+	F.Intrinsic.Date.DateAdd("D",-60,V.Ambient.Date,V.Local.dDate1)
+			F.Intrinsic.String.Concat("SELECT SUM(AMT_INVOICE) AS AMT FROM V_AR_OPEN_ITEMS WHERE CUSTOMER = '",V.Global.Cust,"' AND BATCH_CODE IN ('10','11','12') AND DATE_INVOICE BETWEEN '",V.Local.dDate2.PervasiveDate,"' AND '",V.Local.dDate1.PervasiveDate,"';",V.Local.sSQL)
+			F.ODBC.Connection!conA.OpenRecordsetRO("rstAging",V.Local.sSQL)
+			F.Intrinsic.String.Format(V.ODBC.conA!rstAging.FieldVal!AMT,"###,###,###.00",V.Local.sAmt)
+			Gui.FrmCustInfo.txt6090.Text(V.Local.sAmt)
+			F.ODBC.conA!rstAging.Close
+		F.Intrinsic.Control.ElseIf(V.Local.i,=,3)
+			F.Intrinsic.String.Concat("SELECT SUM(AMT_INVOICE) AS AMT FROM V_AR_OPEN_ITEMS WHERE CUSTOMER = '",V.Global.Cust,"' AND BATCH_CODE IN ('10','11','12') AND DATE_INVOICE <= '",V.Local.dDate1.PervasiveDate,"';",V.Local.sSQL)
+			F.ODBC.Connection!conA.OpenRecordsetRO("rstAging",V.Local.sSQL)
+			F.Intrinsic.String.Format(V.ODBC.conA!rstAging.FieldVal!AMT,"###,###,###.00",V.Local.sAmt)
+			Gui.FrmCustInfo.txt90plus.Text(V.Local.sAmt)
+			F.ODBC.conA!rstAging.Close
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.i)
+
+'F.ODBC.Connection!conA.CloseRecordsets
+
+
+Program.Sub.subAging.End
+
+Program.Sub.Comments.Start
+${$0$}$CRM_Customer_Info$}$SUPERVSR$}$05/30/2014
+Program.Sub.Comments.End
+
